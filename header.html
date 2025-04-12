@@ -3,22 +3,39 @@
   class="text-center mb-8 py-8 bg-gradient-to-r from-teal-500 via-green-500 to-teal-700 text-white"
   data-aos="fade-down"
 >
-  <h1 class="text-4xl font-extrabold mb-2">Kim Sovanna</h1>
-  <p class="text-lg font-light">Senior Full Stack Developer</p>
+  <h1 class="text-4xl font-extrabold mb-2 animated-name">
+    <span>K</span><span>i</span><span>m</span> <span>S</span><span>o</span
+    ><span>v</span><span>a</span><span>n</span><span>n</span><span>a</span>
+  </h1>
+  <p class="text-lg font-light">
+    <span class="animated-text">
+      <span class="word">Senior Full Stack Developer</span>
+      <span class="word">Creative Problem Solver</span>
+      <span class="word">Tech Enthusiast</span>
+    </span>
+  </p>
+  <p class="mt-4 max-w-2xl mx-auto text-base font-light">
+    Passionate and results-driven developer with extensive experience designing
+    and building scalable web applications. Proficient in modern technologies
+    across both frontend and backend, with a strong focus on performance, user
+    experience, and clean code. Dedicated to delivering robust solutions that
+    drive business value.
+  </p>
 </div>
 
 <!-- Hero Section -->
 <section
   id="hero"
   class="text-center py-12 bg-cover bg-center"
-  style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjg2NzQx&ixlib=rb-1.2.1&q=80&w=600');"
+  style="
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjg2NzQx&ixlib=rb-1.2.1&q=80&w=600');
+  "
 >
   <div class="bg-black bg-opacity-50 py-12 px-4">
-    <h2 class="text-4xl font-bold text-white mb-4">
-      Welcome to My Portfolio
-    </h2>
+    <h2 class="text-4xl font-bold text-white mb-4">Welcome to My Portfolio</h2>
     <p class="text-base text-gray-200 mb-6 max-w-xl mx-auto">
-      Building modern, scalable, and user-friendly web applications that deliver exceptional user experiences.
+      Building modern, scalable, and user-friendly web applications that deliver
+      exceptional user experiences.
     </p>
 
     <!-- Call-to-Action Buttons -->
@@ -41,6 +58,132 @@
   </div>
 </section>
 <style>
+  /* Animation for the name */
+  .animated-name {
+    display: inline-flex;
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    text-transform: uppercase; /* Makes the text uppercase */
+    letter-spacing: 0.1em; /* Initial letter spacing */
+    animation: fade-in 3s ease-in-out; /* Fade-in effect for the entire name */
+  }
+
+  .animated-name span {
+    display: inline-block;
+    animation: wave 4s ease-in-out infinite; /* Wave animation for each letter */
+  }
+
+  .animated-name span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .animated-name span:nth-child(2) {
+    animation-delay: 0.2s; /* Increased delay for smoother effect */
+  }
+  .animated-name span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .animated-name span:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .animated-name span:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .animated-name span:nth-child(6) {
+    animation-delay: 1s;
+  }
+  .animated-name span:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  .animated-name span:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  .animated-name span:nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  .animated-name span:nth-child(10) {
+    animation-delay: 1.8s;
+  }
+
+  /* Keyframes for wave animation */
+  @keyframes wave {
+    0%,
+    100% {
+      transform: translateY(0); /* Normal position */
+    }
+    50% {
+      transform: translateY(-8px); /* Moves up slightly */
+    }
+  }
+
+  /* Keyframes for fade-in effect */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Container for animated text */
+  .animated-text {
+    display: flex;
+    position: relative;
+    height: 1.5em; /* Matches the height of the text */
+    width: 100%; /* Ensure the container is wide enough */
+    overflow: hidden; /* Hides text outside the container */
+    vertical-align: top;
+    text-align: center; /* Centers the text horizontally */
+  }
+
+  /* Individual words */
+  .animated-text .word {
+    position: absolute;
+    width: 100%; /* Ensures the word spans the container */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slide 6s linear infinite;
+    will-change: transform, opacity;
+    text-align: center; /* Centers each word horizontally */
+  }
+
+  /* Animation delays for each word */
+  .animated-text .word:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .animated-text .word:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  .animated-text .word:nth-child(3) {
+    animation-delay: 4s;
+  }
+
+  /* Keyframes for sliding animation */
+  @keyframes slide {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+
   /* Custom styles for the header */
   #header {
     background: linear-gradient(to right, #4f46e5, #9333ea);
