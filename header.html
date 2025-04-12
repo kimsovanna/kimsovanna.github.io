@@ -1,28 +1,71 @@
-<div id="header" class="text-center mb-12" data-aos="fade-down">
-  <h1 class="text-4xl font-extrabold text-gray-800 dark:text-gray-200">
-    Kim Sovanna
-  </h1>
-  <p class="text-lg text-gray-600 dark:text-gray-400">
-    Senior Full Stack Developer
-  </p>
+<div
+  id="header"
+  class="text-center mb-8 py-8 bg-gradient-to-r from-teal-500 via-green-500 to-teal-700 text-white"
+  data-aos="fade-down"
+>
+  <h1 class="text-4xl font-extrabold mb-2">Kim Sovanna</h1>
+  <p class="text-lg font-light">Senior Full Stack Developer</p>
 </div>
 
 <!-- Hero Section -->
 <section
   id="hero"
-  class="text-center py-16 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900"
+  class="text-center py-12 bg-cover bg-center"
+  style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRlY2hub2xvZ3l8ZW58MHx8fHwxNjg2NzQx&ixlib=rb-1.2.1&q=80&w=600');"
 >
-  <h2 class="text-5xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-    Welcome to My Portfolio
-  </h2>
-  <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-    Building modern, scalable, and user-friendly web applications.
-  </p>
-  <a
-    href="#projects"
-    class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
-    aria-label="View My Work"
-  >
-    View My Work
-  </a>
+  <div class="bg-black bg-opacity-50 py-12 px-4">
+    <h2 class="text-4xl font-bold text-white mb-4">
+      Welcome to My Portfolio
+    </h2>
+    <p class="text-base text-gray-200 mb-6 max-w-xl mx-auto">
+      Building modern, scalable, and user-friendly web applications that deliver exceptional user experiences.
+    </p>
+
+    <!-- Call-to-Action Buttons -->
+    <div class="flex justify-center space-x-3">
+      <a
+        href="#projects"
+        class="px-6 py-3 bg-blue-600 text-white rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105"
+        aria-label="View My Work"
+      >
+        View My Work
+      </a>
+      <a
+        href="#contact"
+        class="px-6 py-3 bg-gray-300 text-gray-800 rounded-full shadow-md hover:bg-gray-400 transition-transform transform hover:scale-105"
+        aria-label="Contact Me"
+      >
+        Contact Me
+      </a>
+    </div>
+  </div>
 </section>
+<style>
+  /* Custom styles for the header */
+  #header {
+    background: linear-gradient(to right, #4f46e5, #9333ea);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  /* Custom styles for the hero section */
+  #hero {
+    background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+    padding: 3rem;
+    text-align: center;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #header h1 {
+      font-size: 2rem;
+    }
+    #hero h2 {
+      font-size: 1.75rem;
+    }
+    #hero p {
+      font-size: 0.9rem;
+    }
+  }
+</style>

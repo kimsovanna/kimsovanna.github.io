@@ -30,9 +30,12 @@
       class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50"
     >
       <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
-        <h1 class="text-lg font-bold text-blue-600 dark:text-blue-400">
-          Kim Sovanna
-        </h1>
+        <h1
+        class="text-lg font-bold text-blue-600 dark:text-blue-400 cursor-pointer"
+        onclick="location.reload()"
+      >
+        Kim Sovanna
+      </h1>
         <ul class="flex space-x-4 text-sm">
           <li><a href="#header" class="hover:underline">Home</a></li>
           <li><a href="#skills" class="hover:underline">Skills</a></li>
@@ -49,6 +52,7 @@
         </button>
       </div>
     </nav>
+
     <!-- Main Content -->
     <div
       class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-xl p-8 mt-20"
@@ -97,6 +101,16 @@
     </footer>
 
     <script>
+      // Add 'scrolled' class to the nav when scrolling
+      window.addEventListener("scroll", () => {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
       // Dynamically load sections
       const loadSection = (id, file) => {
         fetch(file)
