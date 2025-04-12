@@ -3,6 +3,8 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+
 .section-header {
   opacity: 0;
   transform: translateY(20px);
@@ -14,4 +16,16 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+form input,
+form textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  outline: none;
 }
