@@ -26,6 +26,16 @@ body {
   }
 }
 
+a:hover {
+  text-decoration: underline;
+  color: #2563eb; /* Tailwind's blue-600 */
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
+
 form input,
 form textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;

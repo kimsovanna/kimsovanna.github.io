@@ -25,41 +25,36 @@
   <body
     class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans p-6 transition-colors duration-300"
   >
-    <div
-      class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-xl p-8"
+    <!-- Navigation Bar -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50"
     >
-      <!-- Header Section -->
-      <div id="header" class="text-center mb-12" data-aos="fade-down">
-        <img
-          src="profile.jpg"
-          alt="Kim Sovanna"
-          class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg"
-        />
-        <h1 class="text-4xl font-extrabold text-gray-800 dark:text-gray-200">
+      <div class="max-w-5xl mx-auto flex justify-between items-center p-4">
+        <h1 class="text-lg font-bold text-blue-600 dark:text-blue-400">
           Kim Sovanna
         </h1>
-        <p class="text-lg text-gray-600 dark:text-gray-400">
-          Senior Full Stack Developer | Technical Lead
-        </p>
-      </div>
-
-      <!-- Hero Section -->
-      <section
-        class="text-center py-16 bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900"
-      >
-        <h1 class="text-5xl font-bold text-gray-800 dark:text-gray-200 mb-4">
-          Welcome to My Portfolio
-        </h1>
-        <p class="text-lg text-gray-600 dark:text-gray-400 mb-8">
-          Building modern, scalable, and user-friendly web applications.
-        </p>
-        <a
-          href="#projects"
-          class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+        <ul class="flex space-x-4 text-sm">
+          <li><a href="#header" class="hover:underline">Home</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#experience" class="hover:underline">Experience</a></li>
+          <li><a href="#education" class="hover:underline">Education</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+        <button
+          onclick="document.documentElement.classList.toggle('dark')"
+          class="ml-4 px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition"
         >
-          View My Work
-        </a>
-      </section>
+          🌗
+        </button>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div
+      class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-xl p-8 mt-20"
+    >
+      <!-- Header Section -->
+      <div id="header" data-aos="fade-down"></div>
 
       <!-- Skills Section -->
       <div id="skills" class="py-12" data-aos="zoom-in"></div>
@@ -76,12 +71,29 @@
       <!-- Contact Section -->
       <div id="contact" data-aos="fade-up"></div>
     </div>
+
+    <!-- Footer -->
     <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">
       <p>&copy; 2025 Kim Sovanna. All rights reserved.</p>
       <p>
         <a href="#privacy" class="hover:underline">Privacy Policy</a> |
         <a href="#terms" class="hover:underline">Terms of Service</a>
       </p>
+      <div class="flex justify-center space-x-4 mt-4">
+        <a
+          href="https://github.com/kimsovanna"
+          target="_blank"
+          class="hover:underline"
+          >GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/kimsovanna"
+          target="_blank"
+          class="hover:underline"
+          >LinkedIn</a
+        >
+        <a href="mailto:kimsovanna2@gmail.com" class="hover:underline">Email</a>
+      </div>
     </footer>
 
     <script>
@@ -95,10 +107,10 @@
       };
 
       loadSection("header", "header.html");
+      loadSection("skills", "skills.html");
       loadSection("projects", "projects.html");
       loadSection("experience", "experience.html");
       loadSection("education", "education.html");
-      loadSection("skills", "skills.html");
       loadSection("contact", "contact.html");
 
       // Initialize AOS
