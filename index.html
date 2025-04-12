@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kim Sovanna - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
     <script>
       tailwind.config = { darkMode: "class" };
     </script>
@@ -16,367 +16,37 @@
     <div
       class="max-w-5xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-xl p-8"
     >
-      <!-- Header -->
-      <div
-        class="flex flex-col md:flex-row md:items-center justify-between mb-6"
-      >
-        <div>
-          <h1 class="text-3xl font-bold text-blue-700 dark:text-blue-400">
-            Kim Sovanna
-          </h1>
-          <h2 class="text-lg text-gray-600 dark:text-gray-300">
-            Senior Web Developer
-          </h2>
-        </div>
-        <div
-          class="mt-4 md:mt-0 text-sm text-gray-600 dark:text-gray-300 space-y-1"
-        >
-          <p>📞 (855) 96-7777-886</p>
-          <p>
-            📧
-            <a
-              href="mailto:kimsovanna2@gmail.com"
-              class="text-blue-600 dark:text-blue-400 hover:underline"
-              >kimsovanna2@gmail.com</a
-            >
-          </p>
-          <p>📍 Phnom Penh, Cambodia</p>
-        </div>
-      </div>
+      <!-- Include Header -->
+      <div id="header"></div>
 
-      <!-- Theme Toggle -->
-      <div class="mb-6 text-right">
-        <button
-          onclick="document.documentElement.classList.toggle('dark')"
-          class="px-4 py-2 text-sm bg-gray-200 dark:bg-gray-700 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition"
-        >
-          🌗 Toggle Dark Mode
-        </button>
-      </div>
+      <!-- Include Projects -->
+      <div id="projects"></div>
 
-      <!-- Summary -->
-      <!-- Projects -->
-      <section class="mb-8">
-        <h3 class="section-header text-xl font-semibold border-b pb-1 mb-4">
-          Projects
-        </h3>
-        <div class="space-y-4 text-sm">
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Era Registration
-            </h4>
-            <p>
-              A registration system designed for efficient data management and
-              user onboarding.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Wiki School
-            </h4>
-            <p>
-              A point-of-sale system designed for educational institutions to
-              manage transactions efficiently.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Wiki HRM
-            </h4>
-            <p>
-              A human resource management system tailored for educational
-              institutions to streamline HR processes.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              FT Chat
-            </h4>
-            <p>
-              A real-time chat application with advanced messaging features.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              ETC Kh
-            </h4>
-            <p>
-              A system designed for scanning and checking balance for highway
-              tolls in Cambodia.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Peak System
-            </h4>
-            <p>
-              A comprehensive system for managing business operations and
-              workflows.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Peak Sports
-            </h4>
-            <p>
-              A sports management platform for tracking performance and
-              scheduling events.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">Nham</h4>
-            <p>
-              A food delivery application connecting users with local
-              restaurants.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              TrueHome
-            </h4>
-            <p>
-              A real estate platform for property listings and virtual tours.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Cambo Space
-            </h4>
-            <p>
-              A website built using WordPress with features for coworking space
-              management.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Integration of Online Payment
-            </h4>
-            <p>
-              Implemented secure online payment systems for various platforms.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Integration with Telegram
-            </h4>
-            <p>
-              Developed Telegram integrations for notifications and
-              communication.
-            </p>
-          </div>
-          <div>
-            <h4 class="text-blue-700 dark:text-blue-400 font-semibold">
-              Online Management System
-            </h4>
-            <p>
-              A web-based system for managing business operations and workflows.
-            </p>
-          </div>
-        </div>
-      </section>
+      <!-- Include Experience -->
+      <div id="experience"></div>
 
-      <!-- Experience -->
-      <section class="mb-8">
-        <h3 class="section-header text-xl font-semibold border-b pb-1 mb-4">
-          Experience
-        </h3>
-        <div class="mb-4">
-          <h4 class="font-semibold text-blue-700 dark:text-blue-400">
-            Full Stack Developer – Freelancer
-          </h4>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Oct 2021 – Present | Phnom Penh, Cambodia
-          </p>
-          <ul class="list-disc pl-5 mt-2 text-sm">
-            <li>Developed full-stack applications with modern frameworks</li>
-            <li>
-              Designed APIs, wrote documentation, and led product architecture
-            </li>
-            <li>Met both technical and business needs</li>
-          </ul>
-        </div>
-        <div class="mb-4">
-          <h4 class="font-semibold text-blue-700 dark:text-blue-400">
-            Senior Software Developer – Poscar Digital
-          </h4>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Jan 2018 – Oct 2021 | Phnom Penh, Cambodia
-          </p>
-          <ul class="list-disc pl-5 mt-2 text-sm">
-            <li>Directed development projects and improved product quality</li>
-            <li>Collaborated across teams for efficiency and delivery</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold text-blue-700 dark:text-blue-400">
-            Software Developer – Khme Wiki
-          </h4>
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            Oct 2016 – Dec 2017 | Phnom Penh, Cambodia
-          </p>
-          <ul class="list-disc pl-5 mt-2 text-sm">
-            <li>Developed software based on flowcharts and requirements</li>
-            <li>Integrated systems and handled debugging and support</li>
-          </ul>
-        </div>
-      </section>
+      <!-- Include Education -->
+      <div id="education"></div>
 
-      <!-- Education -->
-      <section class="mb-8">
-        <h3 class="section-header text-xl font-semibold border-b pb-1 mb-2">
-          Education
-        </h3>
-        <div class="text-sm space-y-2">
-          <p>
-            <strong>Bachelor Degree of Computer Science</strong><br />
-            Royal University of Phnom Penh (2013 – 2017)
-          </p>
-          <p>
-            <strong>General English Program</strong><br />
-            <a
-              href="https://acecambodia.org/"
-              target="_blank"
-              class="text-blue-600 dark:text-blue-400 hover:underline"
-              >Australian Center for Education (ACE)</a
-            >
-            (2014 – 2019)
-          </p>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section>
-        <h3 class="section-header text-xl font-semibold border-b pb-1 mb-4">
-          Skills
-        </h3>
-
-        <div class="mb-4">
-          <h4 class="font-medium">Languages</h4>
-          <div class="flex flex-wrap gap-2 mt-2 text-sm">
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >JavaScript</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >HTML</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >CSS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >PHP</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >C#</span
-            >
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <h4 class="font-medium">Frameworks</h4>
-          <div class="flex flex-wrap gap-2 mt-2 text-sm">
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >NestJS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >ExpressJS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >CodeIgniter</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Laravel</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >.NET</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >VueJS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >NuxtJS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >ReactJS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Flutter</span
-            >
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <h4 class="font-medium">Databases</h4>
-          <div class="flex flex-wrap gap-2 mt-2 text-sm">
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >MongoDB</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >PostgreSQL</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >MySQL</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >SQL Server</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >SQLite</span
-            >
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <h4 class="font-medium">Tools & Techniques</h4>
-          <div class="flex flex-wrap gap-2 mt-2 text-sm">
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Agile/Scrum</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Jira</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >AWS</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Docker</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Digital Ocean</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Apache</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Nginx</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Git</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >GitLab</span
-            >
-            <span class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded-full"
-              >Bitbucket</span
-            >
-          </div>
-        </div>
-      </section>
+      <!-- Include Skills -->
+      <div id="skills"></div>
     </div>
 
-    <!-- Simple animation for headers -->
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const headers = document.querySelectorAll(".section-header");
-        headers.forEach((el, i) => {
-          el.style.opacity = 0;
-          el.style.transform = "translateY(20px)";
-          setTimeout(() => {
-            el.style.transition = "all 0.6s ease";
-            el.style.opacity = 1;
-            el.style.transform = "translateY(0)";
-          }, 200 + i * 200);
-        });
-      });
+      // Dynamically load sections
+      const loadSection = (id, file) => {
+        fetch(file)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          });
+      };
+
+      loadSection("header", "header.html");
+      loadSection("projects", "projects.html");
+      loadSection("experience", "experience.html");
+      loadSection("education", "education.html");
+      loadSection("skills", "skills.html");
     </script>
   </body>
 </html>
